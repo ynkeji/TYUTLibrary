@@ -1,0 +1,149 @@
+page{
+    height:105vh;
+}
+
+.container {
+    padding-top: 0;
+    position: relative;
+    background-color: #DCDCDC;
+}
+
+.header {
+    background-color: white;
+    height: 100rpx;
+    width: 750rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.time{
+    position: absolute;
+    top: 130rpx;
+    background-color: white;
+    height: 300rpx;
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+}
+.box-selected{
+    background-color: #105699;
+    border: 2px solid #1989fa;
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px rgba(0, 234, 255, 0.2);
+}
+.button-example{
+    width: 750rpx;
+}
+.box{
+    width: 200rpx; /* Adjust this value to change the size of the box */
+    height: 100rpx; /* Adjust this value to change the size of the box */
+    border: gray 5rpx solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white; /* Add this line to give the box a background color */
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+.box text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.choose{
+    position: absolute;
+    top: 480rpx;
+    width: 750rpx;
+    height: 800rpx;
+    background-color: white;
+}
+.buttonC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map{
+    position: absolute;
+    /*border: black 1rpx solid;*/
+    bottom:200rpx;
+    left: 65rpx;
+    width: 600rpx;
+    height: 400rpx;
+    /*overflow: hidden;*/
+}
+.mapl {
+    position: absolute;
+    width: 600rpx;
+    height: 400rpx;
+    overflow: hidden;
+}
+
+.box2-selected{
+    background-color: #1989fa;
+    border: 2px solid #1989fa;
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px rgba(0, 234, 255, 0.2);
+}
+.box2{
+    width: 150rpx; /* Adjust this value to change the size of the box */
+    height: 50rpx; /* Adjust this value to change the size of the box */
+    border: gray 5rpx solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white; /* Add this line to give the box a background color */
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+.list{
+    position: absolute;
+    left: 50rpx;
+    width: 750rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.confirm{
+    position: absolute;
+    bottom: 0rpx;
+    width: 750rpx;
+    height: 100rpx;
+    background-color: white;
+}
+
+.item-hover {
+    background: rgb(230, 230, 230);
+}
+.day{
+    display: flex;
+}
+.current{
+    display: flex;
+}
+.background{
+    display: block;
+    width: 384px;
+    height: 216px;
+    position: absolute;
+}
+
+.seat{
+    position: absolute;
+    background-image: url("https://img2.imgtp.com/2024/05/19/qY7z1BMi.jpg");
+}

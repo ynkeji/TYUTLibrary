@@ -1,0 +1,58 @@
+<view class="container">
+    <view class="swiper">
+        <t-swiper
+                current="{{current}}"
+                autoplay="{{autoplay}}"
+                duration="{{duration}}"
+                interval="{{interval}}"
+                navigation="{{ { type: 'dots' } }}"
+                list="{{swiperList}}"
+        >
+        </t-swiper>
+    </view>
+    <view class="overlay">
+        <view class="button-group">
+            <view class="button" bind:tap="onTap">
+
+                <t-icon name="{{icon_seat}}" size="48rpx" style="background:white" data-name="{{icon_seat}}"
+                        bind:click="onIconTap"/>
+                <text>座位预约</text>
+            </view>
+            <view class="button">
+                <t-icon name="{{icon_ofen}}" size="50rpx" style="background:white" data-name="{{icon_ofen}}"
+                        bind:click="onIconTap"/>
+                <text>常用预约</text>
+            </view>
+        </view>
+        <view class="notification" hidden="{{notice}}">
+            <t-notice-bar
+                    visible="{{true}}"
+                    direction="vertical"
+                    interval="{{3000}}"
+                    content="{{content}}"
+                    prefixIcon="sound"
+            ></t-notice-bar>
+        </view>
+    </view>
+    <view class="myseat" hidden="{{reserve}}">
+        <view class="notice">
+            <view class="current-txt">|当前预约</view>
+        </view>
+        <view class="current-cell">
+            <view class="reservation-type">普通座位</view>
+            <view class="reservation-type" hidden="{{common}}">{{statusName}}</view>
+            <view class="reservation-details1">
+                <text>{{area}}</text>
+            </view>
+            <view class="reservation-details2">
+                <text>{{showTime}}</text>
+                <text hidden="{{flag_msg2}}">{{msg2}}</text>
+            </view>
+            <view class="reservation-actions">
+                <button class="sign-in-btn">{{button1}}</button>
+                <button class="cancel-btn">{{button2}}</button>
+            </view>
+        </view>
+    </view>
+</view>
+

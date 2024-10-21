@@ -1,0 +1,31 @@
+.container {
+    background-color: #0f2967;
+}
+.text{
+
+ margin-bottom: 20px;
+
+}
+text{
+    color: white;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.field-box input {
+
+    border-radius: 5px;
+    border: 3px solid white;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.field-box{
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: #1989fa;
+}

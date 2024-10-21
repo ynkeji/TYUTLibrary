@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/about/about",
+    "pages/login/login",
+    "pages/information/information",
+    "pages/Seat/Seat",
+    "pages/sate/sate",
+    "pages/choose/choose"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "图书馆预约系统",
+    "navigationBarBackgroundColor": "#0f2967"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "tabBar": {
+    "backgroundColor": "white",
+    "color": "#13227a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "image/about.png",
+        "selectedIconPath": "image/about_select.png",
+        "text": "关于"
+      }
+    ]
+  }
+}

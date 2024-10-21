@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="app-con">
+
+        <view class="v-application__wrap">
+            <view class="app-con">
+                <view class="content contentPc" style="height: calc(-46px + 100vh); min-height: calc(-46px + 100vh);">
+                    <view class="loginBox">
+                        <view class="login">
+                            <view class="text">
+                                <text>太原理工大学图书馆空间预约系统</text>
+                            </view>
+                            <view class="logo">
+                                <image src="a.png" style="width: 100px; height: 100px;"></image>
+                            </view>
+
+                            <view class="field-box">
+                                <input type="text" class="username" placeholder="学工号"
+                                       bindinput="handleUsernameInput"/>
+                                <input type="password" class="pass" placeholder="默认密码:姓名首字母@学工号后四位"
+                                       bindinput="handlePasswordInput"/>
+                            </view>
+                            <button class="btn" style=" flex-shrink: 0; border-radius: 6px;" bindtap="handleLogin">
+                                登录
+                            </button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

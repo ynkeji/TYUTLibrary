@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="map" style="background-color:blue">
+    <movable-area style="width: 500rpx; height: 400rpx;overflow: hidden;">
+      <movable-view
+              style="width: 500rpx; height: 400rpx;"
+              direction="all"
+              scale="{{true}}"
+              scale-min="0.5"
+              scale-max="10"
+              overflow="hidden"
+              bindscale="handleScale"
+      >
+          <image src="https://img2.imgtp.com/2024/05/18/sZefFEye.jpg" class="background" mode="aspectFit" bindload="load">
+            <block wx:for="{{seatList}}" wx:key="value">
+              <view class="seat" vlaue="1" style="{{item.style}}">
+              </view>
+            </block>
+          </image>
+      </movable-view>
+    </movable-area>
+  </view>
+</view>
+

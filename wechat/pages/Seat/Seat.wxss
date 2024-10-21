@@ -1,0 +1,138 @@
+/* pages/Seat/Seat.wxss */
+page{
+    height: 100vh;
+}
+.container{
+    padding-top: 0;
+    height: 100vh;
+}
+.head{
+    width: 750rpx;
+    height: 100rpx;
+    background-color: #1989fa;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center;
+}
+.head text{
+    color: white;
+}
+
+.day{
+    top: 100rpx;
+    width: 750rpx;
+    left: 5rpx;
+    position: absolute;
+    align-items: center;
+    padding-left: 10rpx;
+}
+.day-set{
+    width: 750rpx;
+    display: flex;
+}
+.box{
+    width: 300rpx; /* Adjust this value to change the size of the box */
+    height: 100rpx; /* Adjust this value to change the size of the box */
+    border: gray 5rpx solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white; /* Add this line to give the box a background color */
+    margin-right: 10rpx;
+    margin-bottom: 10rpx;
+}
+.box text{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rpx;
+    display: flex;
+}
+.floor-text{
+    margin-top: 0px;
+    width: 750rpx;
+    height: 60rpx;
+    display: flex;
+}
+.title{
+    margin-top: 0px;
+    font-size: 30rpx;
+}
+.day-text{
+    margin-top: 0rpx;
+    justify-content: center;
+    align-items: center;
+    height: 60rpx;
+}
+
+
+.floor{
+
+    top: 300rpx;
+    width: 750rpx;
+    left: 5rpx;
+    position: absolute;
+    align-items: center;
+    padding-left: 10rpx;
+}
+.floor-set{
+
+    width: 750rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.area{
+    top: 720rpx;
+    width: 750rpx;
+    left: 5rpx;
+    position: absolute;
+    align-items: center;
+    padding-left: 10rpx;
+}
+.area-text{
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 60rpx;
+}
+.area-set{
+    width: 750rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    width: 750rpx;
+    height: 100rpx;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-hover {
+    background: rgb(230, 230, 230);
+}
+
+.box-selected{
+    background-color: #1989fa;
+    border: 2px solid #1989fa;
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px rgba(0, 234, 255, 0.2);
+}
+
+.button-example{
+    position: absolute;
+    bottom: 0vh;
+    width: 750rpx;
+}
+.block {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block--center {
+    width: 240px;
+    height: 240px;
+}

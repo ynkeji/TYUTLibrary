@@ -1,0 +1,10 @@
+<view>
+    <t-cell-group theme="card" bordered>
+        <t-cell title="手机号"  note="{{Mobile}}"/>
+        <t-cell title="邮箱"    note="{{Email}}"/>
+        <t-cell title="学工号"   note="{{Id}}"/>
+        <t-cell title="类型"   note="{{RoleName}}"/>
+        <t-cell title="部门"    note="{{DeptName}}"/>
+        <t-cell title="当前状态"   note="{{FlagName}}" />
+    </t-cell-group>
+</view>

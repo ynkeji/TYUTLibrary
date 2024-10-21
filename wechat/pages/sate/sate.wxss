@@ -1,0 +1,28 @@
+.page{
+  height: 100vh;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.map{
+  transform-origin: 0px 0px 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0.275009);
+  width: 750rpx;
+  height: 800rpx;
+  overflow: hidden;
+}
+
+.background{
+  display: block;
+  width: 384px;
+  height: 216px;
+  position: absolute;
+}
+
+.seat{
+  position: absolute;
+  background-image: url("https://img2.imgtp.com/2024/05/19/qY7z1BMi.jpg");
+}

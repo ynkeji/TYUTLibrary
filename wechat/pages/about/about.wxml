@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="header">
+        <text class="username">{{name}}</text>
+        <text class="userid">{{id}}</text>
+    </view>
+    <view class="content">
+        <t-cell-group theme="card" bordered style="margin-left:0px;margin-right: 0px;">
+            <t-cell title="个人信息" hover arrow url="/pages/information/information">
+                <!-- Add your left-icon here -->
+                <t-icon slot="left-icon" name="https://img2.imgtp.com/2024/05/16/cXjIWRUS.png" size="24" data-name="https://img2.imgtp.com/2024/05/16/cXjIWRUS.png"  />
+            </t-cell>
+            <t-cell title="常用记录" hover arrow url="/pages/often/often">
+                <t-icon slot="left-icon" name="https://img2.imgtp.com/2024/05/16/DRn2I7a6.png" size="24" data-name="https://img2.imgtp.com/2024/05/16/DRn2I7a6.png"  />
+            </t-cell>
+            <t-cell title="座位预约记录"  hover arrow url="/pages/seatReserve/seatreserve">
+                <t-icon slot="left-icon" name="https://img2.imgtp.com/2024/05/15/ZkajuQJr.png" size="24" data-name="https://img2.imgtp.com/2024/05/15/ZkajuQJr.png"  />
+            </t-cell>
+        </t-cell-group>
+        <view class="button">
+            <view class="button-example">
+                <t-button theme="primary" size="large" block bind:tap="exit">注销登录</t-button>
+            </view>
+        </view>
+    </view>
+
+</view>

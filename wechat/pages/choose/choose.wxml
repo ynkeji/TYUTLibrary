@@ -1,0 +1,89 @@
+<!--pages/ofen/ofen.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="header-text">
+            <text>楼层:{{floor}}</text>
+            <text>区域:{{area}}</text>
+        </view>
+        <t-tag class="margin-16" variant="light" theme="success">成功</t-tag>
+    </view>
+    <view class="time">
+        <view class="day">
+            <block wx:for="{{day}}" wx:key="day">
+                <view wx:if="{{index === selectedDayIndex}}" class="box box-selected" hover-class="item-hover"
+                      hover-stay-time="100" bindtap="handleDayTap" data-index="{{index}}">
+                    <text>{{item.date}}</text>
+                    <text>{{item.title}}</text>
+                </view>
+                <view wx:else class="box" hover-class="item-hover" hover-stay-time="100" bindtap="handleDayTap"
+                      data-index="{{index}}">
+                    <text>{{item.date}}</text>
+                    <text>{{item.title}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="current">
+            <block wx:for="{{day[selectedDayIndex].times}}" wx:key="day">
+                <view wx:if="{{index === selectedTimeIndex }}" class="box box-selected"   hover-class="item-hover"
+                      hover-stay-time="100" bindtap="handleTimeTap" data-index="{{index}}">
+                    <text>{{item.start}}-{{item.end}}</text>
+                </view>
+                <view wx:else class="box" hover-class="item-hover" hover-stay-time="100" bindtap="handleTimeTap"
+                      data-index="{{index}}">
+                    <text>{{item.start}}-{{item.end}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="choose">
+        <view class="buttonC">
+            <t-button theme="light" size="large" style="margin: 0rpx 0rpx 0rpx 0rpx;" bind:tap="pattern" data-value="1">地图模式</t-button>
+            <t-button theme="light" size="large" style="margin: 0rpx 0rpx 0rpx 0rpx;" bind:tap="pattern" data-value="2">列表模式</t-button>
+        </view>
+
+        <view class="id">
+            <text>当前选定:{{current}}</text>
+        </view>
+        <view class="map" hidden="{{patternMap}}">
+            <view class="mapl">
+                <movable-area style="width: 600rpx; height: 400rpx;overflow: hidden;">
+                    <movable-view
+                            style="width: 600rpx; height: 400rpx;"
+                            direction="all"
+                            scale="{{true}}"
+                            scale-min="0.5"
+                            scale-max="10"
+                            overflow="hidden"
+                            bindscale="handleScale"
+                    >
+                        <image src="{{floorImg}}" class="background" mode="aspectFit" >
+                            <block wx:for="{{style}}" wx:key="value">
+                                <view class="seat"  style="{{item.style}}" data-id="{{item.id}}" data-name="{{item.name}}" bind:tap="load">
+                                </view>
+                            </block>
+                        </image>
+
+                    </movable-view>
+                </movable-area>
+            </view>
+        </view>
+        <scroll-view scroll-y style="height:500rpx" hidden="{{patternList}}">
+            <view class="list">
+                <block wx:for="{{seatList}}" wx:key="seat">
+                    <view wx:if="{{item.status_name == '空闲' && index === SelectSeatIndex}}" class="box2 box2-selected" hover-class="item-hover"
+                          hover-stay-time="100" bindtap="handleSeatTap" data-index="{{index}}"  data-value="{{item.id}}">
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view wx:elif="{{item.status_name == '空闲'}}" class="box2" hover-class="item-hover" hover-stay-time="100" bindtap="handleSeatTap"
+                          data-index="{{index}}" data-value="{{item.id}}">
+                        <text>{{item.name}}</text>
+                    </view>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="confirm">
+        <t-button theme="primary" size="large" block bind:tap="confirm">确认预约</t-button>
+    </view>
+</view>

@@ -1,0 +1,70 @@
+<view class="container">
+
+    <view class="head">
+        <text>座位选择</text>
+    </view>
+
+    <view class="day">
+        <view class="day-text">
+            <text class="title">日期</text>
+        </view>
+        <view class="day-set">
+            <block wx:for="{{day}}" wx:key="day">
+                <view wx:if="{{index === selectedDayIndex}}" class="box box-selected" hover-class="item-hover"
+                      hover-stay-time="100" bindtap="handleDayTap" data-index="{{index}}">
+                    <text>{{item.time}}</text>
+                    <text>{{item.title}}</text>
+                </view>
+                <view wx:else class="box" hover-class="item-hover" hover-stay-time="100" bindtap="handleDayTap"
+                      data-index="{{index}}">
+                    <text>{{item.time}}</text>
+                    <text>{{item.title}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="floor">
+        <view class="floor-text">
+            <text class="title">楼层</text>
+        </view>
+        <view class="floor-set">
+            <block wx:for="{{day[selectedDayIndex].floor}}" wx:key="floor">
+                <view wx:if="{{index === selectedFloorIndex}}" class="box box-selected" hover-class="item-hover"
+                      hover-stay-time="100" bindtap="handleFloorTap" data-index="{{index}}">
+                    <text>{{item.floor}}</text>
+                    <text>空闲:{{item.free}}</text>
+                </view>
+                <view wx:else class="box" hover-class="item-hover" hover-stay-time="100" bindtap="handleFloorTap"
+                      data-index="{{index}}">
+                    <text>{{item.floor}}</text>
+                    <text>空闲:{{item.free}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="area">
+        <view class="area-text">
+            <text class="title">区域</text>
+        </view>
+        <scroll-view scroll-y style="height:300rpx">
+            <view class="area-set">
+                <block wx:for="{{day[selectedDayIndex].floor[selectedFloorIndex].area}}" wx:key="area">
+                    <view wx:if="{{index === selectedAreaIndex}}" class="box box-selected" hover-class="item-hover"
+                          hover-stay-time="100" bindtap="handleAreaTap" data-index="{{index}}">
+                        <text>{{item.name}}</text>
+                        <text style="font-size:20rpx">空余人数:{{item.free_num}}</text>
+                    </view>
+                    <view wx:else class="box" hover-class="item-hover" hover-stay-time="100" bindtap="handleAreaTap"
+                          data-index="{{index}}">
+                        <text>{{item.name}}</text>
+                        <text style="font-size:20rpx">空余人数:{{item.free_num}}</text>
+                    </view>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="button-example">
+        <t-button theme="primary" size="large" block bind:tap="choose">开始选座</t-button>
+    </view>
+</view>
