@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STTech.BytesIO.Tcp</name>
+    </assembly>
+    <members>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.CipherAlgorithm">
+            <summary>
+            批量加密算法
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.CipherStrength">
+            <summary>
+            密码算法的强度
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.HashAlgorithm">
+            <summary>
+            获取用于生成消息身份验证代码 (MAC) 的算法
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.HashStrength">
+            <summary>
+            获取此实例使用的哈希算法的强度
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.KeyExchangeAlgorithm">
+            <summary>
+            密钥交换算法
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.KeyExchangeStrength">
+            <summary>
+            获此实例使用的密钥交换算法的强度
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs.SslProtocol">
+            <summary>
+            获取此连接进行身份验证的安全协议
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.LocalPort">
+            <summary>
+            本地端口号
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.Host">
+             <summary>
+            远程主机网络地址
+             </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.Port">
+            <summary>
+            远程主机端口号
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.ReceiveBufferSize">
+            <summary>
+            接受缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.SendBufferSize">
+            <summary>
+            发送缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpClient.RemoteEndPoint">
+            <summary>
+            远程终端信息
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TlsVerifySuccessfullyHandler">
+            <summary>
+            TLS通信验证通过委托类型
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.ITcpSSL.OnTlsVerifySuccessfully">
+            <summary>
+            TLS验证成功事件
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpSSL.UseSsl">
+            <summary>
+            启用SSL通信
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpSSL.ServerCertificateName">
+            <summary>
+            服务端证书名称
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpSSL.Certificate">
+            <summary>
+            证书文件
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpSSL.SslProtocol">
+            <summary>
+            Tls协议版本
+            默认为Tls1.2
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpSSL.SslStream">
+            <summary>
+            SSL通信流
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.ITcpSSL.PerformTlsVerifySuccessfully(System.Object,STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs)">
+            <summary>
+            触发TLS通信验证通过事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TcpClient">
+            <summary>
+            TCP通信客户端
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.InnerClient">
+            <summary>
+            内部TCP客户端
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.GetInnerClient">
+            <summary>
+            获取内部的TCP客户端
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:STTech.BytesIO.Tcp.TcpClient.socketDataReceiveBuffer">
+            <summary>
+            接受缓存区
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.IsConnected">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.ReceiveBufferSize">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.SendBufferSize">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Tcp.TcpClient.innerStatus">
+            <summary>
+            内部状态
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Tcp.TcpClient.lockerStatus">
+            <summary>
+            状态锁
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.#ctor">
+            <summary>
+            构造TCP客户端
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.#ctor(System.Net.Sockets.TcpClient)">
+            <summary>
+            构造TCP客户端
+            </summary>
+            <param name="innerClient">内部的TCP客户端（<c>System.Net.Sockets.TcpClient</c>）</param>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.#ctor(System.Net.Sockets.Socket)">
+            <summary>
+            构造TCP客户端
+            </summary>
+            <param name="socket">内部的Socket对象</param>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.Connect(STTech.BytesIO.Core.ConnectArgument)">
+            <summary>
+            异步建立连接
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.ResetInnerClient">
+            <summary>
+            重置内部客户端
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.Disconnect(STTech.BytesIO.Core.DisconnectArgument)">
+            <summary>
+            <inheritdoc/>
+            </summary>
+            <param name="code"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.SendHandler(System.Byte[])">
+            <summary>
+            <inheritdoc/>
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.ReceiveDataHandle">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.ReceiveDataCompletedHandle">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.Dispose">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TcpClient.InnerStatus">
+            <summary>
+            内部客户端的连接状态
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.Host">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.Port">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.LocalPort">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.RemoteEndPoint">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.TcpClient.OnTlsVerifySuccessfully">
+            <summary>
+            TLS通信验证通过委托事件
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.UseSsl">
+            <summary>
+            启用SSL通信
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.ServerCertificateName">
+            <summary>
+            服务端证书名称
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.Certificate">
+            <summary>
+            证书文件
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.SslProtocol">
+            <summary>
+            Tls协议版本
+            默认为Tls1.2
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.SslStream">
+            <summary>
+            SSL通信流
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.RemoteCertificateValidationHandle">
+            <summary>
+            远端证书验证委托
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpClient.LocalCertificateSelectionHandle">
+            <summary>
+            本地证书验证委托
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.PerformTlsVerifySuccessfully(System.Object,STTech.BytesIO.Tcp.Entity.TlsVerifySuccessfullyEventArgs)">
+            <summary>
+            执行TLS通信验证通过事件的委托回调
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.RemoteCertificateValidateCallback(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            验证远端证书
+            关于安全策略错误的枚举，可以参考文档：https://docs.microsoft.com/zh-cn/dotnet/api/system.net.security.sslpolicyerrors
+            </summary>
+            <returns>验证是否通过</returns>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpClient.LocalCertificateSelectionCallback(System.Object,System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Cryptography.X509Certificates.X509Certificate,System.String[])">
+            <summary>
+            选择用于身份验证的本地安全套接字层 (SSL) 证书
+            关于LocalCertificateSelectionCallback委托的文档：https://docs.microsoft.com/zh-cn/dotnet/api/system.net.security.localcertificateselectioncallback?view=netstandard-2.0
+            </summary>
+            <param name="sender">此验证的状态信息</param>
+            <param name="targetHost">客户端指定的主机服务器</param>
+            <param name="localCertificates">包含本地证书</param>
+            <param name="remoteCertificate">用于对远程方进行身份验证的证书</param>
+            <param name="acceptableIssuers">远程方可接受的证书颁发者的 String 数组</param>
+            <returns></returns>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpServer.Host">
+            <summary>
+            开放网络地址
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.ITcpServer.Port">
+            <summary>
+            开放端口号
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.ITcpServer.StartAsync">
+            <summary>
+            启动监听
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.ITcpServer.StopAsync">
+            <summary>
+            停止监听
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.ITcpServer.CloseAsync">
+            <summary>
+            关闭服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TcpServer">
+            <summary>
+            TCP服务端
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.IsRunning">
+            <summary>
+            是否在运行
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TcpServer`1.ClientConnectionAcceptedCallback">
+            <summary>
+            接受客户端连接时
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Tcp.TcpServer`1.EncapsulateSocketHandler">
+            <summary>
+            封装Socket处理过程
+            </summary>
+            <param name="clientSocket"></param>
+            <returns></returns>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.Backlog">
+            <summary>
+            挂起连接队列的最大长度
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.Host">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.Port">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.Clients">
+            <summary>
+            客户端列表
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.ClientConnectionAcceptedHandle">
+            <summary>
+            接收客户端连接时的处理过程
+            默认允许连接
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Tcp.TcpServer`1.EncapsulateSocket">
+            <summary>
+            封装Socket对象的方法
+            将客户端Socket封装称为基于TcpClient实现的类型
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.TcpServer`1.ClientConnected">
+            <summary>
+            客户端建立连接事件
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.TcpServer`1.ClientDisconnected">
+            <summary>
+            客户端断开连接事件
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.TcpServer`1.Started">
+            <summary>
+            服务器启动事件
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Tcp.TcpServer`1.Closed">
+            <summary>
+            服务器关闭事件
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpServer`1.StartAsync">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpServer`1.Dispose">
+            <summary>
+            销毁
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpServer`1.CloseAsync">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Tcp.TcpServer`1.StopAsync">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+    </members>
+</doc>

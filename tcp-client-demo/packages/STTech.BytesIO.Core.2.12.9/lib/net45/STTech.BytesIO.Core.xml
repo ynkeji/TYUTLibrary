@@ -1,0 +1,1039 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STTech.BytesIO.Core</name>
+    </assembly>
+    <members>
+        <member name="T:STTech.BytesIO.Core.BytesClient">
+            <summary>
+            字节数组通信客户端
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.IsConnected">
+            <summary>
+            当前是否已连接
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.ReceiveBufferSize">
+            <summary>
+            接受缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.SendBufferSize">
+            <summary>
+            发送缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.LastMessageReceivedTime">
+            <summary>
+            最后一次消息的时间戳
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Dispose">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.UpdateLastMessageTimestamp(System.Nullable{System.DateTime})">
+            <summary>
+            更新最后一次通信的时间戳
+            </summary>
+            <param name="time">手动设置时间戳</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Connect(STTech.BytesIO.Core.ConnectArgument)">
+            <summary>
+            建立连接
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Connect(System.Int32)">
+            <summary>
+            建立连接
+            </summary>
+            <param name="timeout">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.ConnectAsync(STTech.BytesIO.Core.ConnectArgument)">
+            <summary>
+            异步建立连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.ConnectAsync(System.Int32)">
+            <summary>
+            异步建立连接
+            </summary>
+            <param name="timeout">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Disconnect(STTech.BytesIO.Core.DisconnectArgument)">
+            <summary>
+            断开连接
+            </summary>
+            <param name="argument">断开连接携带的参数</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.DisconnectAsync(STTech.BytesIO.Core.DisconnectArgument)">
+            <summary>
+            异步断开连接
+            </summary>
+            <param name="argument">断开连接携带的参数</param>
+            <returns></returns>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.ReceiveTaskCancellationTokenSource">
+            <summary>
+            异步接收数据任务取消令牌
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.BytesClient.dataReceiveTaskQueue">
+            <summary>
+            数据接收任务队列
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.BytesClient.receivedDataFrameId">
+            <summary>
+            接收数据帧的ID
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.StartReceiveDataTask">
+            <summary>
+            启动异步数据接收任务
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.CancelReceiveDataTask">
+            <summary>
+            取消异步数据接收任务
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.ReceiveDataHandle">
+            <summary>
+            异步接收数据的处理过程
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.ReceiveDataCompletedHandle">
+            <summary>
+            数据接收完成的处理过程
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.InvokeDataReceivedEventCallback(System.Byte[])">
+            <summary>
+            调用数据接收事件的回调
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BytesClient.DefaultSendOptions">
+            <summary>
+            默认的发送选项
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Send(System.Byte[],STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            发送数据
+            </summary>
+            <param name="data"></param>
+            <param name="options">发送选项</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.SendHandler(System.Byte[])">
+            <summary>
+            发送数据的实现过程
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.SendAsync(System.Byte[],STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            异步发送数据
+            </summary>
+            <param name="data"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Send``1(``0,STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            发送请求实体
+            </summary>
+            <typeparam name="TRequest"></typeparam>
+            <param name="request"></param>
+            <param name="options"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.SendAsync``1(``0,STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            异步发送请求实体
+            </summary>
+            <typeparam name="TRequest"></typeparam>
+            <param name="request"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.Send(System.Byte[],System.Int32,STTech.BytesIO.Core.ReplyMatchHandler{System.Byte[],System.Byte[]},STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            发送数据
+            阻塞等待单次发送的响应结果
+            </summary>
+            <param name="data">数据</param>
+            <param name="timeout">超时时间(ms)</param>
+            <param name="matchHandler">收发数据匹配回调。
+            每次接收到的数据帧不一定就是对上一条发送数据的响应（如心跳包等），
+            所以需要根据协议编写对收发数据帧匹配的回调用以确定正确的响应数据。
+            包括不限于以下方式：
+            1.对发送数据的命令位于接受数据的命令位进行对比；
+            2.对发送数据的任务号及通信计数与接收数据的对应位进行对比；
+            3.过滤高频的主动推送数据（如：心跳包、状态更新、异常报告等）,取其后第一帧；
+            </param>
+            <param name="options"></param>
+            <returns>单次发送数据的远端响应</returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.SendAsync(System.Byte[],System.Int32,STTech.BytesIO.Core.ReplyMatchHandler{System.Byte[],System.Byte[]},STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            异步数据
+            异步线程等待单次发送的响应结果
+            </summary>
+            <param name="data">数据</param>
+            <param name="timeout">超时时间(ms)</param>
+            <param name="matchHandler">收发数据匹配回调。
+            每次接收到的数据帧不一定就是对上一条发送数据的响应（如心跳包等），
+            所以需要根据协议编写对收发数据帧匹配的回调用以确定正确的响应数据。
+            包括不限于以下方式：
+            1.对发送数据的命令位于接受数据的命令位进行对比；
+            2.对发送数据的任务号及通信计数与接收数据的对应位进行对比；
+            3.过滤高频的主动推送数据（如：心跳包、状态更新、异常报告等）,取其后第一帧；
+            </param>
+            <returns>单次发送数据并等待远端响应的任务</returns>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnDataReceived">
+            <summary>
+            在接收到数据时发生
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnExceptionOccurs">
+            <summary>
+            在产生异常时发生
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnConnectedSuccessfully">
+            <summary>
+            在建立通信成功时发生
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnConnectionFailed">
+            <summary>
+            在建立通信失败时发生
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnDisconnected">
+            <summary>
+            在通信断开时发生
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.BytesClient.OnDataSent">
+            <summary>
+            在主动发送数据时发生
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseDataReceived(System.Object,STTech.BytesIO.Core.DataReceivedEventArgs)">
+            <summary>
+            触发数据已接受事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseExceptionOccurs(System.Object,STTech.BytesIO.Core.ExceptionOccursEventArgs)">
+            <summary>
+            触发触发异常发生事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseConnectedSuccessfully(System.Object,STTech.BytesIO.Core.ConnectedSuccessfullyEventArgs)">
+            <summary>
+            触发建立连接成功事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseConnectionFailed(System.Object,STTech.BytesIO.Core.ConnectionFailedEventArgs)">
+            <summary>
+            触发连接失败事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseDisconnected(System.Object,STTech.BytesIO.Core.DisconnectedEventArgs)">
+            <summary>
+            触发连接已断开事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.RaiseDataSent(System.Object,STTech.BytesIO.Core.DataSentEventArgs)">
+            <summary>
+            触发数据已发送事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BytesClient.SafelyInvokeCallback(System.Action)">
+            <summary>
+            安全的执行委托回调(或被重写的方法)
+            捕捉回调中的异常，避免因回调代码中的异常导致通信中断
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.IUnpackerSupport`1.Unpacker">
+            <summary>
+            解包器
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Component.Unpacker">
+            <summary>
+            数据解包器
+            </summary>
+        </member>
+        <member name="E:STTech.BytesIO.Core.Component.Unpacker.OnDataParsed">
+            <summary>
+            当解析出结果时发生
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.Component.Unpacker._UnprocessedDataCache">
+            <summary>
+            缓存数据
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.Component.Unpacker.asyncDataCacheLocker">
+            <summary>
+            异步锁
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.Unpacker.ErrorOccurHandler">
+            <summary>
+            错误发生时处理回调
+            in : 错误类型
+            out: 是否清空缓存
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Component.Unpacker.CalculatePacketLength(System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            计算数据包长度的处理程序
+            输入当前缓存的数据
+            输出第一个数据包的长度，若暂无法判断数据包总长度，可返回0
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.Unpacker.StartMark">
+            <summary>
+            起始标记
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.Unpacker.InterruptFrameTimeoutValue">
+            <summary>
+            中断帧(断包)拼接的超时时长
+            单位毫秒
+            值为0时不启用超时检查
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.Component.Unpacker._interruptFrameReceivedTime">
+            <summary>
+            中断帧(断包头部)的接收时间
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Component.Unpacker.#ctor">
+            <summary>
+            构造解包器
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Component.Unpacker.Input(System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            输入收到的数据
+            </summary>
+            <param name="bytes">接收到的数据</param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Component.Unpacker.ErrorCode">
+            <summary>
+            错误类型
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.Component.Unpacker.ErrorCode.StartMarkNotMatch">
+            <summary>
+            起始标记不匹配
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Component.Unpacker`1">
+            <summary>
+            泛型解包器
+            继承字节数组的解包器，使用泛型解包器可以直接获取到泛型对象
+            注意：基于Response对象必须拥有一个带参的构造函数且参数类型为IEnumerable&lt;byte&gt;
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="E:STTech.BytesIO.Core.Component.Unpacker`1.OnDataParsed">
+            <summary>
+            当解析出结果时发生
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.Unpacker`1.Client">
+            <summary>
+            所属的客户端
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.Component.Unpacker`1._calculatePacketLengthHandler">
+            <summary>
+            计算包长度回调方法
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Component.Unpacker`1.#ctor(STTech.BytesIO.Core.BytesClient,System.Func{System.Collections.Generic.IEnumerable{System.Byte},System.Int32})">
+            <summary>
+            构造解包器
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Component.Unpacker`1.CalculatePacketLength(System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            计算数据包长度的处理程序
+            输入当前缓存的数据
+            输出第一个数据包的长度，若暂无法判断数据包总长度，可返回0
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Component.DataParsedEventArgs">
+            <summary>
+            解析出结果(bytes)的事件参数
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Component.DataParsedEventArgs`1">
+            <summary>
+            解析出结果的事件参数
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Component.DataParsedEventArgs`1.Data">
+            <summary>
+            解析出的数据
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ConnectResult">
+            <summary>
+            连接结果
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectResult.IsSuccess">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectResult.ErrorCode">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectResult.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ConnectErrorCode">
+            <summary>
+            连接操作错误码
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ConnectErrorCode.None">
+            <summary>
+            无错误
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ConnectErrorCode.IsConnected">
+            <summary>
+            已存在连接
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ConnectErrorCode.Error">
+            <summary>
+            连接错误
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ConnectErrorCode.ConnectionParameterError">
+            <summary>
+            连接参数错误
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ConnectErrorCode.Timeout">
+            <summary>
+            连接超时
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ConnectArgument">
+            <summary>
+            连接参数
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectArgument.Timeout">
+            <summary>
+            超时时长
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.DisconnectResult">
+            <summary>
+            断开连接操作结果
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectResult.IsSuccess">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectResult.ErrorCode">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectResult.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.DisconnectArgument">
+            <summary>
+            断开连接操作参数
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectArgument.ReasonCode">
+            <summary>
+            原因码
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectArgument.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.DisconnectArgument.#ctor">
+            <summary>
+            构造主动断开连接操作参数
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.DisconnectArgument.#ctor(STTech.BytesIO.Core.DisconnectionReasonCode,System.Exception)">
+            <summary>
+            构造断开连接操作参数
+            </summary>
+            <param name="reasonCode">断开连接的原因码</param>
+            <param name="exception">异常信息</param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.DisconnectErrorCode">
+            <summary>
+            断开连接操作错误码
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectErrorCode.None">
+            <summary>
+            无错误
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectErrorCode.NoConnection">
+            <summary>
+            当前无连接
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectErrorCode.Error">
+            <summary>
+            断开连接错误
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectionFailedEventArgs.Message">
+            <summary>
+            连接失败提示信息
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectionFailedEventArgs.Exception">
+            <summary>
+            内部异常
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.ConnectionFailedEventArgs.ErrorCode">
+            <summary>
+            连接错误码
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DataReceivedEventArgs.Data">
+            <summary>
+            接收到的数据
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DataReceivedEventArgs.FrameId">
+            <summary>
+            帧ID
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DataSentEventArgs`1.Data">
+            <summary>
+            发送出的数据
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectedEventArgs.IsActively">
+            <summary>
+            是否是主动断开的连接
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectedEventArgs.Exception">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.DisconnectedEventArgs.ReasonCode">
+            <summary>
+            断开连接的原因
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.DisconnectionReasonCode">
+            <summary>
+            原因码
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectionReasonCode.Active">
+            <summary>
+            主动断开连接
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectionReasonCode.Passive">
+            <summary>
+            被动断开连接（远端断开连接）
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectionReasonCode.Error">
+            <summary>
+            异常导致连接断开
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.DisconnectionReasonCode.Timeout">
+            <summary>
+            因超时(本地计时)而断开连接
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ReplyMatchHandler`2">
+            <summary>
+            回复(数据收发)匹配委托
+            </summary>
+            <typeparam name="TSend">发送数据类型</typeparam>
+            <typeparam name="TRecv">接收数据类型</typeparam>
+            <param name="send">发送数据</param>
+            <param name="recv">接收数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.BaseReply">
+            <summary>
+            单次发送数据的远端响应
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BaseReply.Client">
+            <summary>
+            触发客户端
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BaseReply.Status">
+            <summary>
+            响应状态
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BaseReply.Exception">
+            <summary>
+            内部错误
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BaseReply.Value">
+            <summary>
+            响应数据
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BaseReply.#ctor(STTech.BytesIO.Core.IBytesClient,STTech.BytesIO.Core.ReplyStatus,System.Exception)">
+            <summary>
+            构造失败的响应
+            </summary>
+            <param name="client"></param>
+            <param name="status"></param>
+            <param name="exception">异常信息</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BaseReply.#ctor(STTech.BytesIO.Core.IBytesClient,System.Object)">
+            <summary>
+            构造成功的响应
+            </summary>
+            <param name="client"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.BaseReply`1">
+            <summary>
+            单次发送数据的远端响应
+            </summary>
+            <typeparam name="T">响应数据的类型</typeparam>
+        </member>
+        <member name="P:STTech.BytesIO.Core.BaseReply`1.Data">
+            <summary>
+            响应结果
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BaseReply`1.#ctor(STTech.BytesIO.Core.IBytesClient,STTech.BytesIO.Core.ReplyStatus,System.Exception)">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.BaseReply`1.#ctor(STTech.BytesIO.Core.IBytesClient,`0)">
+            <summary>
+            构造成功的响应
+            </summary>
+            <param name="client"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Reply">
+            <summary>
+            单次发送数据的远端响应
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Reply.GetResponse">
+            <summary>
+            获取响应对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Reply`1">
+            <summary>
+            单次发送数据的远端响应
+            </summary>
+            <typeparam name="T">响应数据的类型</typeparam>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Reply`1.GetResponse">
+            <summary>
+            获取响应对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ReplyBytes">
+            <summary>
+            单次发送数据的远端响应（字节数组）
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.ReplyBytes.GetBytes">
+            <summary>
+            获取响应对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ReplyStatus">
+            <summary>
+            响应状态
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ReplyStatus.Completed">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ReplyStatus.Timeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="F:STTech.BytesIO.Core.ReplyStatus.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.Response.OriginalData">
+            <summary>
+            原始数据
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.Response.GetOriginalData">
+            <summary>
+            获取原始数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.IRequest.GetBytes">
+            <summary>
+            获取字节数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.SendOptions">
+            <summary>
+            发送选项
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.SendOptions.PauseTime">
+            <summary>
+            停顿时长
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.Exceptions.ReplyConversionException">
+            <summary>
+            Reply格式转换时发生的异常
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.DataSenderExtension">
+            <summary>
+            数据发送器接口扩展
+            提供数据发送器接口中指定的类型的发送方法
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.HeartbeatExtension">
+            <summary>
+            心跳超时扩展
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.HeartbeatExtension.UseHeartbeat``1(``0,System.Action{``0},System.Int32)">
+            <summary>
+            启用心跳功能
+            定时执行发送心跳包的功能
+            </summary>
+            <param name="client"></param>
+            <param name="sendHeartbeatHandler"></param>
+            <param name="interval">如果设置的心跳时间间隔小于等于0，则说明关闭心跳功能</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.HeartbeatExtension.UseHeartbeatTimeout(STTech.BytesIO.Core.BytesClient,System.Int32)">
+            <summary>
+            启用心跳超时检查
+            根据预设的心跳超时时间，当规定时间内未收到任何数据则判断为超时
+            备注：仅适用于任何接收数据皆可认定为心跳保持的情况使用，
+            若需特定心跳包则不可使用此方法。
+            </summary>
+            <param name="client"></param>
+            <param name="timeout">如果设置的心跳超时时间小于等于0，则说明关闭心跳超时检测</param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ClientReceiveTimeoutTimer">
+            <summary>
+            客户端接收超时计时器
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.TimeoutTimer">
+            <summary>
+            超时计时器
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ReconnectExtension">
+            <summary>
+            自动重连扩展
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.ReconnectExtension.UseAutoReconnect(STTech.BytesIO.Core.BytesClient,System.Int32,System.Int32,System.Action{STTech.BytesIO.Core.BytesClient})">
+            <summary>
+            启动自动重连
+            </summary>
+            <param name="client"></param>
+            <param name="delay">重连延时</param>
+            <param name="times">重连次数</param>
+            <param name="reconnectFailedHandler">重连失败处理回调</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.ReconnectExtension.ReconnectTimer.ResetReconnectTimes">
+            <summary>
+            重置重连次数
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.ReplyConversionExtension">
+            <summary>
+            同步通信结果(Reply)类型转换
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.ReplyConversionExtension.ConvertTo``1(STTech.BytesIO.Core.Reply,System.Func{STTech.BytesIO.Core.Response,``0})">
+            <summary>
+            Reply内数据响应类型转格式
+            </summary>
+            <typeparam name="TOut">输出类型</typeparam>
+            <param name="reply"></param>
+            <param name="convertHandler">转换实现回调</param>
+            <returns></returns>
+            <exception cref="T:STTech.BytesIO.Core.Exceptions.ReplyConversionException"></exception>
+        </member>
+        <member name="M:STTech.BytesIO.Core.ReplyConversionExtension.ConvertTo``1(STTech.BytesIO.Core.Reply)">
+            <summary>
+            Reply内数据响应类型转格式
+            </summary>
+            <typeparam name="TOut">输出类型</typeparam>
+            <param name="reply"></param>
+            <returns></returns>
+        </member>
+        <member name="T:STTech.BytesIO.Core.UnpackerExtension">
+            <summary>
+            解包器扩展
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.UnpackerExtension.CreateUnpacker``1(STTech.BytesIO.Core.Component.IUnpackerSupport{``0},System.Func{System.Collections.Generic.IEnumerable{System.Byte},System.Int32})">
+            <summary>
+            创建解包器
+            </summary>
+            <typeparam name="TRecv"></typeparam>
+            <param name="unpackerSupport"></param>
+            <param name="calculatePacketLengthHandler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:STTech.BytesIO.Core.UnpackerExtension.BindUnpacker(STTech.BytesIO.Core.BytesClient,STTech.BytesIO.Core.Component.Unpacker)">
+            <summary>
+            为基于BytesClient的客户端绑定解包器
+            </summary>
+            <param name="client"></param>
+            <param name="unpacker"></param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.UnpackerExtension.Send``2(STTech.BytesIO.Core.Component.IUnpackerSupport{``1},``0,System.Int32,STTech.BytesIO.Core.ReplyMatchHandler{``0,``1},STTech.BytesIO.Core.SendOptions)">
+            <summary>
+            发送数据
+            阻塞等待单次发送的响应结果
+            <code>
+            ctor:
+            this.Unpacker = this.CreateUnpacker&lt;T&gt;(()=>{});
+            </code>
+            </summary>
+            <param name="unpackerSupport"></param>
+            <param name="request">数据</param>
+            <param name="timeout">超时时间(ms)</param>
+            <param name="matchHandler">收发数据匹配回调。
+            每次接收到的数据帧不一定就是对上一条发送数据的响应（如心跳包等），
+            所以需要根据协议编写对收发数据帧匹配的回调用以确定正确的响应数据。
+            包括不限于以下方式：
+            1.对发送数据的命令位于接受数据的命令位进行对比；
+            2.对发送数据的任务号及通信计数与接收数据的对应位进行对比；
+            3.过滤高频的主动推送数据（如：心跳包、状态更新、异常报告等）,取其后第一帧；
+            </param>
+            <param name="options"></param>
+            <returns>单次发送数据的远端响应</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:STTech.BytesIO.Core.UnpackerExtension.SendAsync``2(STTech.BytesIO.Core.Component.IUnpackerSupport{``1},``0,System.Int32,STTech.BytesIO.Core.ReplyMatchHandler{``0,``1})">
+            <summary>
+            发送数据
+            异步等待单次发送的响应结果
+            <code>
+            ctor:
+            this.Unpacker = this.CreateUnpacker&lt;T&gt;(()=>{});
+            </code>
+            </summary>
+            <param name="unpackerSupport"></param>
+            <param name="request">数据</param>
+            <param name="timeout">超时时间(ms)</param>
+            <param name="matchHandler">收发数据匹配回调。
+            每次接收到的数据帧不一定就是对上一条发送数据的响应（如心跳包等），
+            所以需要根据协议编写对收发数据帧匹配的回调用以确定正确的响应数据。
+            包括不限于以下方式：
+            1.对发送数据的命令位于接受数据的命令位进行对比；
+            2.对发送数据的任务号及通信计数与接收数据的对应位进行对比；
+            3.过滤高频的主动推送数据（如：心跳包、状态更新、异常报告等）,取其后第一帧；
+            </param>
+            <returns>单次发送数据并等待远端响应的任务</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:STTech.BytesIO.Core.IBytesClient">
+            <summary>
+            字节数组通信客户端接口
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.IBytesClient.Connect(STTech.BytesIO.Core.ConnectArgument)">
+            <summary>
+            建立连接
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.IBytesClient.Disconnect(STTech.BytesIO.Core.DisconnectArgument)">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.IBytesClient.IsConnected">
+            <summary>
+            是否已连接
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.IBytesClient.ReceiveBufferSize">
+            <summary>
+            接受缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.IBytesClient.SendBufferSize">
+            <summary>
+            发送缓存区大小
+            </summary>
+        </member>
+        <member name="P:STTech.BytesIO.Core.IBytesClient.LastMessageReceivedTime">
+            <summary>
+            最后一次消息的时间戳
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.IDataSender`1">
+            <summary>
+            数据发送器接口
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:STTech.BytesIO.Core.PacketReceivedHandler`1">
+            <summary>
+            数据包接受完成事件委托
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.IPacketReceiver`1">
+            <summary>
+            数据包接收器
+            </summary>
+            <typeparam name="T">指定类型</typeparam>
+        </member>
+        <member name="E:STTech.BytesIO.Core.IPacketReceiver`1.OnPacketReceived">
+            <summary>
+            在接收到经模块管道处理过的数据包时发生
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.IPacketReceiver`1.RaisePacketReceived(System.Object,STTech.BytesIO.Core.PacketReceivedEventArgs{`0})">
+            <summary>
+            执行数据包接受完成的响应事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:STTech.BytesIO.Core.VirtualClient">
+            <summary>
+            虚拟客户端
+            </summary>
+        </member>
+        <member name="T:STTech.BytesIO.Core.VirtualClient`1">
+            <summary>
+            虚拟客户端
+            </summary>
+            <typeparam name="T">内部客户端类型</typeparam>
+        </member>
+        <member name="P:STTech.BytesIO.Core.VirtualClient`1.InnerClient">
+            <summary>
+            内部客户端
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.#ctor">
+            <summary>
+            构造虚拟客户端
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.#ctor(`0)">
+            <summary>
+            构造虚拟客户端
+            </summary>
+            <param name="innerClient">内部客户端类型</param>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.Connect(STTech.BytesIO.Core.ConnectArgument)">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.Disconnect(STTech.BytesIO.Core.DisconnectArgument)">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.SendHandler(System.Byte[])">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.ReceiveDataCompletedHandle">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.ReceiveDataHandle">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+        <member name="M:STTech.BytesIO.Core.VirtualClient`1.Dispose">
+            <summary>
+            <inheritdoc/>
+            </summary>
+        </member>
+    </members>
+</doc>

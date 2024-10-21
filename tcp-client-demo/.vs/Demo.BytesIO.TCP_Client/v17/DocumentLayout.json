@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\getcodestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\getcodestring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\datadeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\datadeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\supercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\supercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|e:\\c#\\library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\urllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\urllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\reques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\reques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\listviewlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\listviewlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\util\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\util\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\demo.bytesio.tcp_client\\jsonbean\\confirm\\confirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB58724-F432-4D04-A2DF-0F188AEE69EC}|Demo.BytesIO.TCP_Client\\Demo.BytesIO.TCP_Client.csproj|solutionrelative:demo.bytesio.tcp_client\\jsonbean\\confirm\\confirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 249,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Library.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\Library.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\Library.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\Library.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\Library.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAcwDwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:44:07.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetCodeString.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\GetCodeString.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\GetCodeString.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\GetCodeString.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\GetCodeString.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAlwBIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:44:02.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UrlList.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\UrlList.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\UrlList.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\UrlList.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\UrlList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:43:57.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SuperCode.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\SuperCode.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\SuperCode.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\SuperCode.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\SuperCode.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAADwvx0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:43:51.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "reques.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\reques.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\reques.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\reques.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\reques.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:43:44.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\Program.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\Program.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\Program.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:43:42.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\Form1.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\Form1.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\Form1.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\Form1.cs",
+              "ViewState": "AQIAAEEBAAAAAAAAAAAcwFkBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T06:57:17.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\Form1.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\Form1.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\Form1.cs [\u8BBE\u8BA1]*",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\Form1.cs [\u8BBE\u8BA1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T13:40:35.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListViewList.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\ListViewList.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\ListViewList.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\ListViewList.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\ListViewList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T13:37:52.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "confirm.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\JsonBean\\Confirm\\confirm.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\JsonBean\\Confirm\\confirm.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\JsonBean\\Confirm\\confirm.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\JsonBean\\Confirm\\confirm.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwBIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:01:29.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataDeal.cs",
+              "DocumentMoniker": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\DataDeal.cs",
+              "RelativeDocumentMoniker": "Demo.BytesIO.TCP_Client\\util\\DataDeal.cs",
+              "ToolTip": "E:\\C#\\Library\\\u65B0\u5EFA\u6587\u4EF6\u5939\\tcp-client-demo\\Demo.BytesIO.TCP_Client\\util\\DataDeal.cs",
+              "RelativeToolTip": "Demo.BytesIO.TCP_Client\\util\\DataDeal.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAEwIIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T02:26:44.709Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
