@@ -15,7 +15,9 @@
 ![image](https://github.com/ynkeji/TYUTLibrary/blob/main/resource/%E5%9B%BE1.png)
 ![image](https://github.com/ynkeji/TYUTLibrary/blob/main/resource/%E5%9B%BE2.png)
 ![image](https://github.com/ynkeji/TYUTLibrary/blob/main/resource/%E5%9B%BE3.png)
-![video](https://github.com/ynkeji/TYUTLibrary/blob/main/resource/效果图.mp4)
+<video src="https://github.com/ynkeji/TYUTLibrary/blob/main/resource/效果图.mp4" controls="controls">
+  Your browser does not support the video tag.
+</video>
 
 ## Limitations
 接口因为学校一直在更新，所以有部分逻辑失效，代码因为第一次构建，没有来得及重构，代码逻辑较乱。
