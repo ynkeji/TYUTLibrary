@@ -10,7 +10,8 @@
 - 部署微信小程序源码
 - 部署spring源代码在服务器
 - 部署c#客户端在连有校园vpn的服务器
-
+使用效果：
+![image](https://github.com/ynkeji/TYUTLibrary/blob/main/resource/%E5%9B%BE1.png)
 接口因为学校一直在更新，所以有部分逻辑失效，代码因为第一次构建，没有来得及重构，代码逻辑较乱。
 
 # 欢迎有能力的人可以去优化一下。
